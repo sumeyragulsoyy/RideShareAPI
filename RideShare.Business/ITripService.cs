@@ -13,5 +13,6 @@ namespace RideShareAPI.RideShare.Business
         List<Trip> getAvailableTripsAccordingToPoints(string From, string To);
         bool requestJoin(int TripId);
         Trip getTrip(int Id);
+        List<Trip> GetAllTripsBetweenPoints(string From, string To);
     }
 }

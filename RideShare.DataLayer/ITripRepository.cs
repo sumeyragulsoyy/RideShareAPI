@@ -13,6 +13,7 @@ namespace RideShareAPI.RideShare.DataLayer
         List<Trip> getAvailableTripsAccordingToPoints( string From, string To);
         bool requestJoin(int TripId);
         Trip getTrip(int Id);
+        List<Trip> GetAllTripsBetweenPoints();
 
     }
 }

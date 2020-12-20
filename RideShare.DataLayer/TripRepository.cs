@@ -30,6 +30,12 @@ namespace RideShareAPI.RideShare.DataLayer
             return trip;
         }
 
+        public List<Trip> GetAllTripsBetweenPoints()
+        {
+            List<Trip> trips = _context.Trips.ToList();
+            return trips;
+        }
+
         public List<Trip> getAvailableTripsAccordingToPoints(string From, string To)
         {
             List<Trip> availableTrips = _context.Trips.Where(x => x.IsTripActive == true && x.StartingStop == From && x.Destination == To).ToList();

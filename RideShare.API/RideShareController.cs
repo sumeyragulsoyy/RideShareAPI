@@ -50,5 +50,11 @@ namespace RideShareAPI.RideShare.API
         {
             return Ok( _tripService.requestJoin(request.Id));
         }
+
+        [HttpGet("GetTripsBetweenPoints")]
+        public IActionResult GetAllTripsBetweenPoints(AvailableTripsRequest request)
+        {
+            return Ok(_tripService.GetAllTripsBetweenPoints(request.StartingStop,request.Destination));
+        }
     }
 }

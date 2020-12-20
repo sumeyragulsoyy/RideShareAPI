@@ -32,6 +32,8 @@ namespace RideShareAPI
             services.AddControllers();
             services.AddScoped<ITripRepository, TripRepository>();
             services.AddScoped<ITripService, TripService>();
+            services.AddScoped<ICityRepository, CityRepository>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

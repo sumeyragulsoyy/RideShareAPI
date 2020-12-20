@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RideShareAPI.RideShare.DataLayer;
 
 namespace RideShareAPI.Migrations
 {
     [DbContext(typeof(TripDbContext))]
-    partial class TripDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201220170351_City_Added")]
+    partial class City_Added
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

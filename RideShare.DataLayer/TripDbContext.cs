@@ -12,6 +12,7 @@ namespace RideShareAPI.RideShare.DataLayer
         public TripDbContext(DbContextOptions<TripDbContext> options) : base(options) { }
 
         public DbSet<Trip> Trips { get; set; }
+        public DbSet<City> Cities { get; set; }
 
     }
 }
